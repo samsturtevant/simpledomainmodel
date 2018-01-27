@@ -89,8 +89,11 @@ class MoneyTests: XCTestCase {
   
   func testAddUSDtoGBP() {
     let total = tenUSD.add(fiveGBP)
+    print (total)
     XCTAssert(total.amount == 10)
+    print(total)
     XCTAssert(total.currency == "GBP")
+    print (total)
   }
 }
 
